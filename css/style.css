@@ -14,10 +14,10 @@
 
 body {
   font: 400 14px/1.6 "Open Sans", sans-serif;
-  background: url(/images/bg.jpg);
+  background: #111827;
   margin: 0;
   padding: 0;
-  color: #555;
+  color: #E5E7EB;
 }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
 
 h1, h2, h3 {
   margin: 5px 0;
-  color: #353535;
+  color: #F3F4F6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 p em {
   font-weight: bold;
-  color: #353535;
+  color: #F3F4F6;
 }
 
 p {
@@ -50,14 +50,14 @@ p {
 }
 
 strong, th {
-  color: #353535;
+  color: #F3F4F6;
 }
 
 #overlay {
   position: fixed;
   left: 0;
   top: 0;
-  background: #fff;
+  background: #1F2937;
   opacity: 0.8;
   width: 100%;
   height: 100%;
@@ -92,9 +92,9 @@ strong, th {
 #announcements {
   margin: 3px 5% 32px;
   max-width: 1005px;
-  padding: 0 16px;
-  background: #fdfae6;
-  border: 1px solid #ebdbb7;
+  padding: 10px;
+  background: rgba(78, 70, 229, 0.3);
+  border-left: 6px solid #4F46E5;
   border-radius: 3px;
   font-size: 0.9em;
 }
@@ -118,6 +118,7 @@ strong, th {
 }
 
 #announcements p:first-child {
+  filter:  brightness(0) invert(1);
   font-weight: bold;
   padding-left: 20px;
   background-image: url(/images/announcement-icon.png);
@@ -130,9 +131,9 @@ strong, th {
 #install-command {
   font-family: Consolas, Monaco, "Andale Mono", monospace;
   padding: 5px 10px;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 3px;
+  background: #1F2937;
+  border: 1px solid #374151;
+  border-radius: 5px;
   max-width: 375px;
 }
 
@@ -235,7 +236,7 @@ a {
   display: block;
   font: 25px "Helvetica Neue", "Open Sans", sans-serif;
   font-weight: 100;
-  color: #444;
+  color: #E5E7EB;
 }
 
 #description .express {
@@ -246,7 +247,7 @@ a {
 }
 
 #description .express a {
-  color: #353535;
+  color: #F3F4F6;
 }
 
 #express-version {
@@ -265,7 +266,7 @@ a {
   position: relative;
   top: -5px;
   font: 100 4.1em "Helvetica Neue", "Open Sans", sans-serif;
-  color: #aeaeae;
+  color: #9CA3AF;
   line-height: .87;
 }
 
@@ -300,17 +301,13 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: #eee;
+  background: #1F2937;
   width: 100%;
   height: 120px;
   z-index: 100;
-  border-bottom: 1px solid #ddd;
+  box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.scroll header {
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 4px #eee;
-}
 
 /* companies using express */
 
@@ -327,7 +324,7 @@ p code, td code {
 }
 
 pre {
-  color: #555;
+  color: #E5E7EB;
   font-size: 14px;
   line-height: 1.4;
   padding: 16px;
@@ -586,7 +583,7 @@ html[xmlns] .clearfix {
   border: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
-  color: #555;
+  color: #E5E7EB;
 }
 
 #mobile-menu {
@@ -683,14 +680,14 @@ footer {
 }
 
 #navbar a {
-  color: #666;
+  color: #D1D5DB;
   padding-left: 20px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 #navbar a.active {
   font-weight: bold;
-  color: #353535;
+  color: #F3F4F6;
 }
 
 
@@ -719,8 +716,8 @@ footer {
 }
 
 .menu ul.dropit-submenu {
-  background-color: #fcfcfa;
-  border: 1px solid #b2b2b2;
+  background-color: #1F2937;
+  border: 1px solid rgba(107, 114, 128, 0.5);
   padding: 6px 0;
   margin: 0 0 0 1px;
   border-radius: 3px;
@@ -773,13 +770,13 @@ footer {
 }
 
 #menu > li > a {
-  color: #353535;
+  color: #F3F4F6;
   font-weight: bold;
   font-size: 15px;
 }
 
 #menu ul a {
-  color: #555;
+  color: #E5E7EB;
   padding-right: 7px;
 }
 
@@ -788,7 +785,7 @@ footer {
 }
 
 h2 a {
-  color: #353535 !important;
+  color: #F3F4F6 !important;
 }
 
 /* search */
@@ -798,8 +795,15 @@ h2 a {
   height: 2.5em;
   min-width: 100%;
   padding: 5px;
+  outline: none;
+  border: 1px solid rgba(107, 114, 128, 0.5);
+  border-radius:15px;
+  background: rgba(55, 65, 81, 0.4);
+  color: #E5E7EB;
 }
-
+#q:focus {
+  border-color: #6b7280;
+}
 .algolia-autocomplete {
   min-width: 12em;
   top: -0.2em;
